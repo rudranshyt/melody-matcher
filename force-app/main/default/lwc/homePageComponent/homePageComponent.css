@@ -1,7 +1,38 @@
-.main{
-    margin: 0 auto;
-    width: 100%;
-    min-height: 100vh;
-    height: auto;
-    background-color: rgba(200,196,185,255);
+.main {
+  margin: 0 auto;
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  background: linear-gradient(to bottom, rgba(200, 196, 185, 1), rgba(200, 196, 185, 1));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.main h2 {
+  font-size: 28px;
+  font-weight: normal;
+  color: #666666;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.main p {
+  font-size: 20px;
+  color: #666666;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+lightning-button {
+  font-size: 18px;
 }
