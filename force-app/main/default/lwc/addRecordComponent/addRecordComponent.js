@@ -38,8 +38,9 @@ export default class AddRecordComponent extends LightningElement {
         })
         .then(result => {
             if (result) {
-                this.showToast("Success", "Updated successfully", "success");
+                this.showToast("Success", "Record created successfully", "success");
             }
+            return;
         })
         .catch(error => {
             console.error('error--->', error);

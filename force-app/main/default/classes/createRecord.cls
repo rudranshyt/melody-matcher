@@ -8,7 +8,7 @@
 public without sharing class createRecord {
     @AuraEnabled
     public static void addRecordMethod(string email, string name, string criteria){
-        customer_user__c customer = [select id, Username__c, Email__c, Crieteria__c from customer_user__c limit 1];
+        customer_user__c customer = new customer_user__c();
         customer.email__c = email;
         customer.Username__c = name;
         customer.Crieteria__c = criteria;
@@ -18,6 +18,7 @@ public without sharing class createRecord {
         }
         catch(Exception e){
             system.debug('error---->'+e.getMessage()+'------->'+e.getLineNumber());
+            throw e;
         }
     }
 
