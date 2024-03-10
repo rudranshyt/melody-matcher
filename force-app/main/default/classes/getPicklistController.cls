@@ -5,7 +5,7 @@
  * @last modified on  : 03-10-2024
  * @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
 **/
-public with sharing class getPicklistController {
+public without sharing class getPicklistController {
     public List<String> getPicklistValues(
     String objectApiName,
     String fieldName

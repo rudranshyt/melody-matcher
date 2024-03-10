@@ -5,7 +5,7 @@
  * @last modified on  : 03-10-2024
  * @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
 **/
-public with sharing class createRecord {
+public without sharing class createRecord {
     @AuraEnabled
     public static void addRecordMethod(string email, string name, string criteria){
         customer_user__c customer = [select id, Username__c, Email__c, Crieteria__c from customer_user__c limit 1];
