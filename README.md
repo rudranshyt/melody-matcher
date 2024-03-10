@@ -10,7 +10,7 @@ An automatic process to get specialized playlists via email.
 
 ## Read All About It
 
-Melody Matcher is an innovative application designed to curate personalized playlists tailored to your musical preferences. With its intuitive user interface, creating a record is a breeze. Simply input your favorite artists, genres, or mood, and Melody Matcher will do the rest. No more endless scrolling through generic playlists – receive a handpicked selection of tunes directly to your email inbox. 
+Melody Matcher is an innovative application designed to curate specialised playlists tailored to your musical moods. With its intuitive user interface, creating a record is a breeze. Simply input your criteria, and Melody Matcher will do the rest. No more endless scrolling through generic playlists – receive a handpicked selection of tunes directly to your email inbox. 
 
 ### More Information
 
@@ -22,4 +22,4 @@ Melody Matcher is an innovative application designed to curate personalized play
 
 ---
 
-*Created by [Rudransh Shukla]*
+*Created by Rudransh Shukla*
