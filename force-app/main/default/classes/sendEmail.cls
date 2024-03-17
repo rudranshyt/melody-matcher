@@ -2,10 +2,10 @@
  * @description       : send playlist email trigger handler
  * @author            : Rudransh Shukla
  * @group             : 
- * @last modified on  : 03-10-2024
+ * @last modified on  : 03-17-2024
  * @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
 **/
-public without sharing class sendEmail {
+public with sharing class sendEmail {
     
     public static void sendEmailToCustomer(List<Customer_User__c> newRecords) {
         List<Messaging.SingleEmailMessage> emailsToSend = new List<Messaging.SingleEmailMessage>();

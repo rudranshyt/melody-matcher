@@ -31,29 +31,22 @@ export default class AddRecordComponent extends LightningElement {
         this.criteria = event.target.value;
     }
     handleSaveButton() {
-        addRecordMethod({
-            name: this.name,
-            email: this.email,
-            criteria: this.criteria
-        })
-        .then(result => {
-            if (result) {
-                this.showToast("Success", "Record created successfully", "success");
-            }
-            return;
-        })
-        .catch(error => {
-            console.error('error--->', error);
-             this.showToast("Error", "Record cannot be saved", "error");
-        });
-    }
-    showToast(title, message, variant) {
-        this.dispatchEvent(
-            new ShowToastEvent({
-                title: title,
-                message: message,
-                variant: variant
-            })
-        );
-    }
+    addRecordMethod({
+        name: this.name,
+        email: this.email,
+        criteria: this.criteria
+    })
+    .then(() => {
+        alert("Record created successfully, check email");
+        this.name = '';
+        this.email = '';
+        this.criteriaValues = [];
+    })
+    .catch(error => {
+        console.error('error--->', error);
+        alert("Record cannot be saved. Please try again later.");
+         this.criteriaValues = [];
+    });
+}
+
 }
